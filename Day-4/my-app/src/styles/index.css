@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --fg: #0f172a;
+  --muted: #64748b;
+  --card: #f8fafc;
+}
+
+.dark {
+  --bg: #0b1220;
+  --fg: #e6eef8;
+  --muted: #94a3b8;
+  --card: #071226;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+.btn-focus:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.18);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+}
+
+.card-hover {
+  transition: transform 0.18s ease;
+}
+
+select {
+  color: #0b1220;
+  background-color: #ffffff;
+}
+
+select option {
+  color: #0b1220;
+  background-color: #ffffff;
+}
+
+.dark select,
+.dark select option {
+  color: #0b1220 !important;
+  background-color: #ffffff !important;
+}
